@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+i {
+  cursor: pointer;
+}
+
+.aboutContainer {
+  margin-top: -30px;
+  min-width: 60%;
+}
+
+.aboutImg {
+  /* max-height: 220px; */
+  max-width: 245px;
+  position: absolute;
+  top: 150px;
+}
+
+.bothBox {
+  justify-content: center;
+  align-items: center;
+}
+
+.secondBox i {
+  font-size: 20px;
+  margin-right: 10px;
+  transition: all 0.3s linear;
+}
+
+.secondBox {
+  position: absolute;
+  bottom: 60px;
+  color: white;
+}
+
+.secondBox a {
+  text-decoration: none;
+  color: white;
+}
+
+.secondBox a:hover i {
+  transform: scale(1.7);
+  color: white;
+}
+
+.aboutPara {
+  font-family: emoji;
+  font-size: 18px;
+  height: 175px;
+  margin-top: 40px;
+}
+.mb-3 label{
+  color: blue;
+}
+.del-editIcons{
+  color: blueviolet;
+  position: absolute;
+  right: 0px;
+  /* transition: all 0.3s linear; */
+}
+.del-editIcons i:hover{
+  transform: scale(1.4);
+  transition: all 0.3s linear;
+}
