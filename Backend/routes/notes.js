@@ -5,7 +5,7 @@ const router = express.Router();
 const { body, validationResult } = require('express-validator');
 
 
-// Route 1 :- Get all the notes using : GET "api/notes/fetchallnotes"  -- login required
+// Route 1 :- Get all the notes using : GET "/api/notes/fetchallnotes"  -- login required
 router.get('/fetchallnotes', fetchuser, async (req, res) => {
         try {
         const notes = await Note.find({ user: req.user.id });

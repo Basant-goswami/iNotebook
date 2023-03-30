@@ -7,7 +7,8 @@ const Login = (props) => {
     const submitHandler = async (e) => {
         e.preventDefault();
         //api call
-        const response = await fetch("http://localhost:5000/api/auth/login", {
+        // const response = await fetch("http://localhost:5000/api/auth/login", {
+        const response = await fetch("https://inotebookbackend-wppp.onrender.com/api/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
